@@ -38,7 +38,7 @@ Esse módulo contém 6 funções destacadas na imagem abaixo e que após impleme
 
 Cada função deve ser implementada em conformidade com as regras que serão descritas a seguir
 
-![Alt text](/assets/front.png?raw=true "Frontend")
+![Alt text](/assets/back.png?raw=true "Frontend")
 
 ### Regras a serem implementadas
 
