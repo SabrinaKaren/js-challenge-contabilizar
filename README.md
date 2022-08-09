@@ -18,7 +18,7 @@ Atualmente existem dezenas de linguagens de programação sendo utilizadas para 
 
 Entendemos que Javascript, por ser uma linguagem de programação amplamente utilizada para o desenvolvimento de aplicações para plataforma web, permitindo ser executada apenas com o uso de um navegador, facilita tanto o processo de avaliação como o de implementação do desafio por parte do(a) candidato(a). Até porque entendemos que, independente da linguagem de programação preferida (seja Java, C#, Pynthon, ou qualquer outra), o conhecimento de Javascript se tornou essencial nos tempos atuais e, mesmo uma pessoa que ainda não conheça essa linguagem, pode facilmente adquirir esse conhecimento por meio do vasto material disponível na Internet. Se esse for o seu caso, indicamos uma ótima fonte de conhecimento: o site de referência da [Mozilla](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference).
 
-## Instruções de envio
+## Orientações gerais
 
 O(a) candidato(a) deverá realizar o upload do arquivo ZIP com o conteúdo desse repositório, que pode ser realizado clicando no menu do botão Code e escolhendo a opção "Download ZIP".
 
@@ -31,6 +31,35 @@ Para realizar o desafio, o(a) candidato(a) deverá alterar somente o arquivo **s
 Após codificar as funções contidas no arquivo service.js, todo o conteúdo da pasta deverá ser compactado em um novo arquivo ZIP, cujo o nome deverá conter o CPF do(a) candidato(a) (Exemplo: '07817548790.zip') e ser enviado para a organização que promove o processo seletivo de acordo com as orientações indicadas por ela. É imprescindível que o conteúdo e o nome do arquivo estejam corretos para que os testes automatizados vinculados a este desafio funcionem corretamente.
 
 ## Implementação
+
+Conforme as orientações gerais, apenas o conteúdo do arquivo service.js deve ser alterado.
+
+Esse módulo contém 6 funções destacadas na imagem abaixo e que após implementadas permitirão a execução do programa.
+
+Cada função deve ser implementada em conformidade com as regras que serão descritas a seguir
+
+![Alt text](/assets/front.png?raw=true "Frontend")
+
+### Regras a serem implementadas
+
+1. Função **validarEntradaDeDados**
+(Em construção)
+
+2. Função **recuperarSaldosPorConta**
+(Em construção)
+
+3. Função **recuperarMaiorMenorLancamentos**
+(Em construção)
+
+4. Função **recuperarMaioresSaldos**
+(Em construção)
+
+5. Função: **recuperarMaioresMedias**
+(Em construção)
+
+## Testando o programa
+
+(Em construção)
 
 ![Alt text](/assets/front.png?raw=true "Frontend")
 
