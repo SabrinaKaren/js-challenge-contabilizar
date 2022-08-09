@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Elogroup</title>
+</head>
+<body style="margin: 10px;">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p class="fw-bold">Contabilizar <small class="text-muted">(Desafio de programação)</small></p>
+      </div>
+    </div>
+    <div class="row" style="min-height: 250px;">
+      <div class="col-6" style="min-width: 250px; padding: 5px;">
+        <div class="card text-bg-light h-100">
+          <div class="card-header">Entrada de dados</div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                <label class="form-label">CPF:</label>
+                <input id="cpf" class="form-control" type="text" autofocus/>
+              </div>
+              <div class="col">
+                <label class="form-label">Valor:</label>
+                <input id="valor" class="form-control text-end" type="text" data-thousands="." data-decimal="," data-prefix="R$ " />
+              </div>
+              <div class="col">
+                <label class="form-label">&nbsp;</label>
+                <button id="registrar" class="form-control btn btn-primary align-middle" onclick="salvarLancamento()">Registrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6" style="min-width: 250px; padding: 5px;">
+        <div class="card card text-bg-secondary h-100">
+          <div class="card-header">3 últimos lançamentos para o CPF selecionado</div>
+          <div class="card-body">
+            <table class="table" aria-describedby="ultimosLancamentos" style="color: white">
+              <thead>
+                <tr>
+                  <th scope="col">CPF</th>
+                  <th scope="col">Saldo</th>
+                </tr>
+              </thead>
+              <tbody id="ultimosLancamentos"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="min-height: 250px;">
+      <div class="col-6" style="min-width: 250px; padding: 5px;">
+        <div class="card text-bg-info h-100">
+          <div class="card-header">Todas as contas</div>
+          <div class="card-body">
+            <table class="table" aria-describedby="todasContas">
+              <thead>
+                <tr>
+                  <th scope="col">CPF</th>
+                  <th scope="col">Saldo</th>
+                </tr>
+              </thead>
+              <tbody id="saldosPorConta"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-6" style="min-width: 250px; padding: 5px;">
+        <div class="card text-bg-warning h-100">
+          <div class="card-header">3 maiores saldos</div>
+          <div class="card-body">
+            <table class="table white" aria-describedby="maioresSaldos">
+              <thead>
+                <tr>
+                  <th scope="col">CPF</th>
+                  <th scope="col">Saldo</th>
+                </tr>
+              </thead>
+              <tbody id="maioresSaldos"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js" integrity="sha512-Rdk63VC+1UYzGSgd3u2iadi0joUrcwX0IWp2rTh6KXFoAmgOjRS99Vynz1lJPT8dLjvo6JZOqpAHJyfCEZ5KoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="service.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
