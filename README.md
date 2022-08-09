@@ -22,7 +22,7 @@ Entendemos que Javascript, por ser uma linguagem de programação amplamente uti
 
 O(a) candidato(a) deverá realizar o upload do arquivo ZIP com o conteúdo desse repositório, que pode ser realizado clicando no menu do botão Code e escolhendo a opção "Download ZIP".
 
-Pedimos que não seja realizado um fork desse repositório, pois isso facilitaria a divulgação pública das solução, facilitando o plágio, que obviamente não é permitido e pode ser facilmente identificado na ocasião da entrevista técnica, uma etapa presente em processos seletivos que envolvem testes técnicos no qual é pedido para o(a) candidato(a) que explique o código implementado.
+Pedimos que não seja realizado um fork desse repositório, pois isso facilitaria a divulgação pública da solução, facilitando o plágio, que obviamente não é permitido e pode ser facilmente identificado na ocasião da entrevista técnica, uma etapa presente em processos seletivos que envolvem testes técnicos no qual é pedido para o(a) candidato(a) que explique o código implementado.
 
 Os arquivos contidos no ZIP baixado devem ser descompactados em uma mesma pasta.
 
@@ -34,13 +34,31 @@ Após codificar as funções contidas no arquivo service.js, todo o conteúdo da
 
 Conforme as orientações gerais, apenas o conteúdo do arquivo service.js deve ser alterado.
 
-Esse módulo contém 6 funções destacadas na imagem abaixo e que após implementadas permitirão a execução do programa.
+Esse módulo contém 5 funções destacadas na imagem abaixo e que após implementadas permitirão a execução do programa.
 
 Cada função deve ser implementada em conformidade com as regras que serão descritas a seguir
 
 ![Alt text](/assets/back.png?raw=true "Frontend")
 
 ### Regras a serem implementadas
+
+Antes de adentrar às regras a serem implementadas nas funções, destacamos uma definição geral que será utilizada em todos os casos de uso, o JSON **"lancamento"** (no singular) e o **"lancamentos"** (no plural).
+
+O JSON lancamento (no singular) é um objeto que possui duas propriedades: cpf e valor. Exemplo:
+```js
+{ cpf: "07817548790", valor: 12.45 }
+```
+
+A propriedade **cpf** é uma string, enquanto a propriedade **valor** é um número.
+
+O JSON lancamentos (no plural) é um array de objetos lancamento (no singular). Exemplo:
+```js
+[{ cpf: "07817548790", valor: 12.45 }, { cpf: "92632334039", valor: 1234.65 }]
+```
+
+Por fim, um outro parâmetro de entrada que estará presente, especificamente na função "recuperarMaiorMenorLancamentos" se chama **cpf**, que nesse caso se tratará de uma string, sem traços e pontos, representando um CPF válido.
+
+Descritos os modelos de objetos a serem usados, vamos às regras a serem implementadas em cada função.
 
 1. Função **validarEntradaDeDados**
 (Em construção)
