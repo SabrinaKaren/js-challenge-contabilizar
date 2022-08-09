@@ -4,21 +4,22 @@ const lancamentos = []
 
 const salvarLancamento = () => {
     
-    let inputCpf = document.getElementById('cpf')
-    let inputValor = document.getElementById('valor')
-    let inputRegistrar = document.getElementById('registrar')
+    const inputCpf = document.getElementById('cpf')
+    const inputValor = document.getElementById('valor')
+    const inputRegistrar = document.getElementById('registrar')
 
-    inputCpf.setAttribute('disabled', true)
-    inputValor.setAttribute('disabled', true)
-    inputRegistrar.setAttribute('disabled', true)
+    const disableInput = (input) => input.setAttribute('disabled', true)
+    disableInput(inputCpf)
+    disableInput(inputValor)
+    disableInput(inputRegistrar)
 
     setTimeout(() => {
         try {
-            let lancamento = { 
+            const lancamento = { 
                 cpf: inputCpf.value == '' ? null : inputCpf.value, 
                 valor: inputValor.value == '' ? null :  inputValor.value
             }
-            let mensagemValidacao = validarEntradaDeDados(lancamento)
+            const mensagemValidacao = validarEntradaDeDados(lancamento)
             if (mensagemValidacao) {
                 alert(mensagemValidacao)
             } else {
@@ -27,9 +28,10 @@ const salvarLancamento = () => {
                 alert('Lançamento registrado com sucesso!')
             }
         } finally {
-            inputCpf.removeAttribute('disabled')
-            inputValor.removeAttribute('disabled')
-            inputRegistrar.removeAttribute('disabled')
+            const enableInput = (input) => input.removeAttribute('disabled')
+            enableInput(inputCpf)
+            enableInput(inputValor)
+            enableInput(inputRegistrar)
             inputCpf.focus()
         }
     }, 1000)
@@ -37,43 +39,27 @@ const salvarLancamento = () => {
 }
 
 const atualizarPaineis = (cpf) => {
-    limparCampos()
-    atualizarPainelSaldosPorConta()
-    atualizarPainelUltimosLancamentos(cpf)
-    atualizarPainelMaioresSaldos()
-}
 
-const limparCampos = () => {
+    const atualizarPainel = (tbody, lancamentosProcessados) => {
+        tbody.innerHTML = ''
+        for(const lancamento of lancamentosProcessados) {
+            const th = document.createElement('th')
+            th.setAttribute('scope', 'row') 
+            th.innerHTML = lancamento.cpf
+            const td = document.createElement('td')
+            td.innerHTML = lancamento.valor
+            const tr = document.createElement('tr')
+            tr.appendChild(th)
+            tr.appendChild(td)
+            tbody.appendChild(tr)
+        }
+    }
+
     document.getElementById('cpf').value = null
     document.getElementById('valor').value = null
-}
+    atualizarPainel(document.getElementById('saldosPorConta'), recuperarSaldosPorConta(lancamentos))
+    atualizarPainel(document.getElementById('ultimosLancamentos'), recuperarMaiorMenorLancamentos(cpf, lancamentos))
+    atualizarPainel(document.getElementById('maioresSaldos'), recuperarMaioresSaldos(lancamentos))
+    atualizarPainel(document.getElementById('maioresMedias'), recuperarMaioresMedias(lancamentos))
 
-const atualizarPainelSaldosPorConta = () => {
-    let tbody = document.getElementById('saldosPorConta')
-    atualizarPainel(tbody, recuperarSaldosPorConta(lancamentos))
-}
-
-const atualizarPainelUltimosLancamentos = (cpf) => {
-    let tbody = document.getElementById('ultimosLancamentos')
-    atualizarPainel(tbody, recuperarUltimosLancamentos(cpf, lancamentos))
-}
-
-const atualizarPainelMaioresSaldos = () => {
-    let tbody = document.getElementById('maioresSaldos')
-    atualizarPainel(tbody, recuperarMaioresSaldos(lancamentos))
-}
-
-const atualizarPainel = (tbody, lancamentosProcessados) => {
-    tbody.innerHTML = ''
-    for(const lancamento of lancamentosProcessados) {
-        let th = document.createElement('th')
-        th.setAttribute('scope', 'row') 
-        th.innerHTML = lancamento.cpf
-        let td = document.createElement('td')
-        td.innerHTML = lancamento.valor
-        let tr = document.createElement('tr')
-        tr.appendChild(th)
-        tr.appendChild(td)
-        tbody.appendChild(tr)
-    }
 }
