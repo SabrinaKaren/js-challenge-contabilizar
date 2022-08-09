@@ -3,18 +3,17 @@ const validarEntradaDeDados = (lancamento) => {
 }
 
 const recuperarSaldosPorConta = (lancamentos) => {
-   return [{cpf:'07817548790',valor:12.12}]
+   return []
 }
 
 const recuperarMaiorMenorLancamentos = (cpf, lancamentos) => {
-   return [{cpf:'07817548790',valor:12.13}]
+   return []
 }
 
 const recuperarMaioresSaldos = (lancamentos) => {
-   return [{cpf:'07817548790',valor:12.14}]
+   return []
 }
 
 const recuperarMaioresMedias = (lancamentos) => {
-    return [{cpf:'07817548790',valor:12.15}]
+    return []
 }
-
