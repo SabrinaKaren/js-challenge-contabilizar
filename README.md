@@ -4,61 +4,63 @@
 
 ## Introdução
 
-Este repositório contém um arquétipo cujo o propósito é o de prover um artefato para codificação de um desafio de programação, de nível básico, com o uso da linguaguem Javascript.
+Este repositório contém um arquétipo cujo objetivo é prover um artefato para codificação de um desafio de programação, de nível básico, com o uso da linguaguem Javascript.
 
-O propósito deste desafio é certificar o conhecimento de uma pessoa em **Lógica de Programação** e **Estrutura de Dados**.
+O propósito deste desafio é testar o conhecimento de uma pessoa em técnicas básicas de **Programação** e **Estrutura de Dados**.
 
 Nas seções abaixo, o(a) candidato(a) encontrará as instruções sobre como deverá proceder para realizar o desafio.
 
-Caso o(a) candidato(a) esteja participando de um processo seletivo, deverá considerar não apenas as instruções contidas nesse manual (sobre como realizar o desafio), mas também as instruções que forem repassadas pela organização que estiver promovendo o processo seletivo no qual esse repositório esteja sendo utilizado como referência para realização de um Teste Técnico.
+Caso o(a) candidato(a) esteja participando de um processo seletivo, deverá considerar não apenas as instruções contidas nesse manual, mas também as instruções que forem repassadas pela organização que estiver promovendo o processo seletivo no qual esse repositório esteja sendo utilizado como referência para realização de um Teste Técnico.
 
 **Por que Javascript?**
 
-Atualmente existem dezenas de linguagens de programação sendo utilizadas para as mais diversas finalidades no mercado. Isso faz o desafio de elaborar um desafio de programação ser ainda mais complexo, considerando que a não utilização de uma linguagem como referência, embora facilite a aplicação dos conhecimentos exigidos, torna o processo de correção e avaliação muito custoso e com menos acurácia, em razão da possível diversidade de tecnologias.
+Atualmente existem dezenas de linguagens de programação sendo utilizadas para as mais diversas finalidades no mercado. Isso faz o desafio de elaborar um desafio de programação ser ainda mais complexo. Entendemos que Javascript, por ser uma linguagem de programação amplamente utilizada para o desenvolvimento de aplicações para plataforma web, permitindo ser executada apenas com o uso de um navegador, facilita tanto o processo de avaliação como o de implementação do desafio por parte do(a) candidato(a).
 
-Entendemos que Javascript, por ser uma linguagem de programação amplamente utilizada para o desenvolvimento de aplicações para plataforma web, permitindo ser executada apenas com o uso de um navegador, facilita tanto o processo de avaliação como o de implementação do desafio por parte do(a) candidato(a). Até porque entendemos que, independente da linguagem de programação preferida (seja Java, C#, Pynthon, ou qualquer outra), o conhecimento de Javascript se tornou essencial nos tempos atuais e, mesmo uma pessoa que ainda não conheça essa linguagem, pode facilmente adquirir esse conhecimento por meio do vasto material disponível na Internet. Se esse for o seu caso, indicamos uma ótima fonte de conhecimento: o site de referência da [Mozilla](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference).
+Caso o(a) candidato(a) não tenha familiaridade com Javscript, indicamos uma ótima referência para estudo, a documentação do [Mozilla](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference) sobre a linguagem.
 
 ## Orientações gerais
 
-O(a) candidato(a) deverá realizar o upload do arquivo ZIP com o conteúdo desse repositório, que pode ser realizado clicando no menu do botão Code e escolhendo a opção "Download ZIP".
-
-Pedimos que não seja realizado um fork desse repositório, pois isso facilitaria a divulgação pública da solução, facilitando o plágio, que obviamente não é permitido e pode ser facilmente identificado na ocasião da entrevista técnica, uma etapa presente em processos seletivos que envolvem testes técnicos no qual é pedido para o(a) candidato(a) que explique o código implementado.
+O(a) candidato(a) deverá realizar upload de arquivo ZIP com o conteúdo desse repositório, que pode ser obtido clicando no menu do botão Code e escolhendo a opção "Download ZIP".
 
 Os arquivos contidos no ZIP baixado devem ser descompactados em uma mesma pasta.
 
-Para realizar o desafio, o(a) candidato(a) deverá alterar somente o arquivo **service.js**, com o propósito de implementar as funções contidas nesse módulo de forma que o programa funcione corretamente, o que poderá ser verificado abrindo o arquivo index.html em um navegador, o que geralmente é possível com apenas a execução de um duplo clique sobre o mesmo.
+O(a) candidato(a) então deverá alterar o conteúdo do arquivo **service.js**, adicionando código nas funções contidas nesse arquivo, conforme as instruções que serão descritas adiante.
 
-Após codificar as funções contidas no arquivo service.js, todo o conteúdo da pasta deverá ser compactado em um novo arquivo ZIP, cujo o nome deverá conter o CPF do(a) candidato(a) (Exemplo: '07817548790.zip') e ser enviado para a organização que promove o processo seletivo de acordo com as orientações indicadas por ela. É imprescindível que o conteúdo e o nome do arquivo estejam corretos para que os testes automatizados vinculados a este desafio funcionem corretamente.
+Para testar o código implementado, o(a) candidato(o) deverá abrir o arquivo index.html em um navegador, o que geralmente é possível apenas com a execução de um duplo clique sobre ele.
+
+Imagem do arquivo index.html aberto em um browser. Será esse o "frontend" do programa.
+
+![Alt text](/assets/front.png?raw=true "Frontend")
+
+Após terminar todas as implementações no arquivo service.js, todo o conteúdo da pasta deverá ser compactado em um novo arquivo ZIP, cujo o nome deverá conter o CPF do(a) candidato(a) (Exemplo: '07817548790.zip'). Por fim, esse arquivo deverá e ser enviado para a organização que promove o processo seletivo de acordo com as orientações indicadas por ela.
 
 ## Implementação
 
-Conforme as orientações gerais, apenas o conteúdo do arquivo service.js deve ser alterado.
+O arquivo service.js contém as 5 (cinco) funções destacadas na imagem abaixo.
 
-Esse módulo contém 5 funções destacadas na imagem abaixo e que após implementadas permitirão a execução do programa.
-
-Cada função deve ser implementada em conformidade com as regras que serão descritas a seguir
+O código do corpo de cada uma dessas funções deve ser implementada em conformidade com as regras que serão descritas adiante.
 
 ![Alt text](/assets/back.png?raw=true "Frontend")
 
 ### Regras a serem implementadas
 
-Antes de adentrar às regras a serem implementadas nas funções, destacamos uma definição geral que será utilizada em todos os casos de uso, o JSON **"lancamento"** (no singular) e o **"lancamentos"** (no plural).
+#### Modelos de dados
 
-O JSON lancamento (no singular) é um objeto que possui duas propriedades: cpf e valor. Exemplo:
+Existem dois tipos de objeto que serão usados como parâmetros de entrada nas funções: o JSON **"lancamento"** (no singular) e o **"lancamentos"** (no plural).
+
+Você deve considerar que o JSON lancamento (no singular) será um objeto que possui duas propriedades: cpf e valor. Exemplo:
 ```js
 { cpf: "07817548790", valor: 12.45 }
 ```
 
 A propriedade **cpf** é uma string, enquanto a propriedade **valor** é um número.
 
-O JSON lancamentos (no plural) é um array de objetos lancamento (no singular). Exemplo:
+Por sua vez, o JSON lancamentos (no plural) será um array de objetos do tipo lancamento (no singular). Exemplo:
 ```js
 [{ cpf: "07817548790", valor: 12.45 }, { cpf: "92632334039", valor: 1234.65 }]
 ```
 
-Por fim, um outro parâmetro de entrada que estará presente, especificamente na função "recuperarMaiorMenorLancamentos" se chama **cpf**, que nesse caso se tratará de uma string, sem traços e pontos, representando um CPF válido.
-
-Descritos os modelos de objetos a serem usados, vamos às regras a serem implementadas em cada função.
+#### Regras de Negócio
 
 1. Função **validarEntradaDeDados**
 (Em construção)
@@ -78,10 +80,3 @@ Descritos os modelos de objetos a serem usados, vamos às regras a serem impleme
 ## Testando o programa
 
 (Em construção)
-
-![Alt text](/assets/front.png?raw=true "Frontend")
-
-
-
-
-
