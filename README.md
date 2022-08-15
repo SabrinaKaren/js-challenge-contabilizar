@@ -63,20 +63,60 @@ Por sua vez, o JSON lancamentos (no plural) será um array de objetos do tipo la
 #### Regras de Negócio
 
 1. Função **validarEntradaDeDados**
-(Em construção)
+- Tipo do parâmetro de entrada: lancamento
+- Tipos de retorno: string (mensagens de validação) ou null (todas as validações ok)
+
 
 2. Função **recuperarSaldosPorConta**
-(Em construção)
+- Tipo do parâmetro de entrada: lancamentos (todos os lançamentos registrados)
+- Tipos de retorno: lancamentos (agrupados por CPF. Cada linha, um CPF.)
+
 
 3. Função **recuperarMaiorMenorLancamentos**
-(Em construção)
+- Tipo do parâmetro de entrada:
+  - lancamentos (todos os lançamentos registrados)
+  - string (CPF já validado, somente com números)
+- Tipos de retorno: lancamentos (somente dois registros identificados na regra)
+
 
 4. Função **recuperarMaioresSaldos**
-(Em construção)
+- Tipo do parâmetro de entrada: lancamentos (todos os lançamentos registrados)
+- Tipos de retorno: lancamentos (somente os três registros identificados na regra)
+
 
 5. Função: **recuperarMaioresMedias**
-(Em construção)
+- Tipo do parâmetro de entrada: lancamentos (todos os lançamentos registrados)
+- Tipos de retorno: lancamentos (somente os três registros identificados na regra)
 
-## Testando o programa
+## Exemplo de Teste do programa
 
-(Em construção)
+#### Entradas de dados:
+
+Obs.: A sequência deve ser obedecida.
+
+CPF       |Valor     |
+------------|------------|
+
+
+#### Saídas esperadas:
+
+2. Painel Azul Claro (Saldos por CPF)
+
+CPF       |Valor     |
+------------|------------|
+
+3. Painel Cinza (O maior e o menor lançamento do último CPF)
+
+CPF       |Valor     |
+------------|------------|
+
+4. Painel Azul Escuro (Os três CPFs com maiores "médias")
+
+CPF       |Valor     |
+------------|------------|
+
+5. Painel Amarelo (Três maiores saldos por CPF - do maior para o menor)
+
+CPF       |Valor     |
+------------|------------|
+
