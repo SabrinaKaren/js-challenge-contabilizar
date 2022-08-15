@@ -38,11 +38,13 @@ Após terminar todas as implementações no arquivo service.js, todo o conteúdo
 
 O arquivo service.js contém as 5 (cinco) funções destacadas na imagem abaixo.
 
-O código do corpo de cada uma dessas funções deve ser implementada em conformidade com as regras que serão descritas adiante.
+O código do corpo de cada uma dessas funções deve ser implementado em conformidade com as regras que serão descritas adiante.
 
 ![Alt text](/assets/back.png?raw=true "Frontend")
 
 ### Regras a serem implementadas
+
+Obs.: Para um melhor entendimento das regras, o(a) candidato(a) também poderá interpretar os dados apresentados na seção "Exemplo de Teste do programa".
 
 #### Modelos de dados
 
@@ -62,31 +64,39 @@ Por sua vez, o JSON lancamentos (no plural) será um array de objetos do tipo la
 
 #### Regras de Negócio
 
+Obs.: Para validações e outros cálculos, o(a) candidato(a) poderá criar funções auxiliares (até mesmo capturar funções na internet para usar no código), mas não deve modificar as assinaturas das funções existentes.
+
 1. Função **validarEntradaDeDados**
 - Tipo do parâmetro de entrada: lancamento
 - Tipos de retorno: string (mensagens de validação) ou null (todas as validações ok)
-
+Esta função recebe um objeto (lancamento) contendo os valores digitados pelo usuário. Esses valores deverão ser analisados conforme as regras abaixo. Caso uma ou mais regras não sejam atendidas, as mensagens deverão ser agrupadas em uma única string e essa string deverá ser retornada na função. Se todas as regras forem atendidas a função deverá retornar null.
+   - CPF deve conter apenas caracteres núméricos
+   - O dígito verificador do CPF deve ser válido
+   - Valor deve ser numérico
+   - Valor não pode ser superior a R$ 15.000,00
+   - Valor não pode ser inferior a R$ 2.000,00
 
 2. Função **recuperarSaldosPorConta**
 - Tipo do parâmetro de entrada: lancamentos (todos os lançamentos registrados)
 - Tipos de retorno: lancamentos (agrupados por CPF. Cada linha, um CPF.)
-
+Essa função recebe um array com todos os lançamentos digitados. Os valores desse array deverão ser analisados e um array de saída deverá ser criado contendo em cada linha um CPF e na coluna valor o saldo do respectivo CPF. Para calcular o saldo basta somar o valor dos lançamentos do CPF.
 
 3. Função **recuperarMaiorMenorLancamentos**
 - Tipo do parâmetro de entrada:
   - lancamentos (todos os lançamentos registrados)
   - string (CPF já validado, somente com números)
 - Tipos de retorno: lancamentos (somente dois registros identificados na regra)
-
+Essa função recebe um array com todos os lançamentos digitados e um CPF. Os valores desse array deverão ser analisados e um array de saída deverá ser criado contendo, no máximo, dois registros, sendo um deles com o maior valor lançado para o CPF recebido como parâmetro e outro com o menor.
 
 4. Função **recuperarMaioresSaldos**
 - Tipo do parâmetro de entrada: lancamentos (todos os lançamentos registrados)
 - Tipos de retorno: lancamentos (somente os três registros identificados na regra)
-
+Essa função recebe um array com todos os lançamentos digitados. Os valores desse array deverão ser analisados e um array de saída deverá ser criado contendo, no máximo, três registros correspondentes aos CPFs com maiores saldos. Para cada lançamento deverá ser exibido o saldo do respectivo CPF. 
 
 5. Função: **recuperarMaioresMedias**
 - Tipo do parâmetro de entrada: lancamentos (todos os lançamentos registrados)
 - Tipos de retorno: lancamentos (somente os três registros identificados na regra)
+Essa função recebe um array com todos os lançamentos digitados. Os valores desse array deverão ser analisados e um array de saída deverá ser criado contendo, no máximo, três registros correspondentes aos CPFs com maiores saldos médios. O saldo médio deve corresponder à "MÉDIA" dos valores registros para o respectivo CPF.
 
 ## Exemplo de Teste do programa
 
