@@ -111,7 +111,7 @@ CPF       |Valor     |
 
 #### Saídas esperadas:
 
-2. Painel Azul Claro (Saldos por CPF - Na sequência em que os CPFs foram digitados)
+##### Painel Azul Claro (Saldos por CPF - Na sequência em que os CPFs foram digitados):
 
 CPF       |Valor     |
 ------------|------------|
@@ -120,14 +120,14 @@ CPF       |Valor     |
 74914372061 | R$ 246,22
 93975495022 | R$ 10.489,99
 
-3. Painel Cinza (O maior e o menor lançamento do último CPF - Do menor para o maior)
+##### Painel Cinza (O maior e o menor lançamento do último CPF - Do menor para o maior):
 
 CPF       |Valor     |
 ------------|------------|
 93975495022 | R$ 546,78
 93975495022 | R$ 8.000,21
 
-4. Painel Azul Escuro (Os três CPFs com maiores "médias" - Da maior para a menor)
+##### Painel Azul Escuro (Os três CPFs com maiores "médias" - Da maior para a menor):
 
 CPF       |Valor     |
 ------------|------------|
@@ -135,7 +135,7 @@ CPF       |Valor     |
 05987701007 | R$ 478,23
 74914372061 | R$ 82,07
 
-5. Painel Amarelo (Três maiores saldos por CPF - do maior para o menor)
+##### Painel Amarelo (Três maiores saldos por CPF - do maior para o menor):
 
 CPF       |Valor     |
 ------------|------------|
