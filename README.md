@@ -30,6 +30,8 @@ Para testar o código implementado, o(a) candidato(o) poderá abrir o arquivo in
 
 Imagem do arquivo index.html aberto no navegador. Por meio dessa interface, o(a) candidato(a) poderá testar o código implementado.
 
+Obs.: Como não estamos usando um armazenamento de dados persistente (banco de dados, storage...), lembre-se que caso a página seja recarregada, os dados precisarão ser adicionados novamente.
+
 ![Alt text](/assets/front.png?raw=true "Frontend")
 
 ### Entrega
