@@ -6,33 +6,41 @@
 
 Este repositório contém um arquétipo cujo objetivo é prover um artefato para codificação de um desafio de programação, de nível básico, com o uso da linguaguem Javascript.
 
-O propósito deste desafio é testar o conhecimento de uma pessoa em técnicas básicas de **Programação** e **Estrutura de Dados**.
+O propósito deste desafio é testar o conhecimento de uma pessoa em técnicas de **Programação** e **Manipulação de Dados**.
 
 Nas seções abaixo, o(a) candidato(a) encontrará as instruções sobre como deverá proceder para realizar o desafio.
 
-Caso o(a) candidato(a) esteja participando de um processo seletivo, deverá considerar não apenas as instruções contidas nesse manual, mas também as instruções que forem repassadas pela organização que estiver promovendo o processo seletivo no qual esse repositório esteja sendo utilizado como referência para realização de um Teste Técnico.
+Caso o(a) candidato(a) esteja participando de um processo seletivo, deverá considerar não apenas as instruções contidas aqui, como também as instruções que forem fornecidas pela organização que estiver promovendo o processo seletivo.
 
 **Por que Javascript?**
 
-Atualmente existem dezenas de linguagens de programação sendo utilizadas para as mais diversas finalidades no mercado. Isso faz o desafio de elaborar um desafio de programação ser ainda mais complexo. Entendemos que Javascript, por ser uma linguagem de programação amplamente utilizada para o desenvolvimento de aplicações para plataforma web, permitindo ser executada apenas com o uso de um navegador, facilita tanto o processo de avaliação como o de implementação do desafio por parte do(a) candidato(a).
+Atualmente existem dezenas de linguagens de programação sendo utilizadas para as mais diversas finalidades no mercado. Isso torna o desafio de elaborar um desafio de programação ainda mais complexo. Entendemos que Javascript, por ser uma linguagem de programação amplamente utilizada para o desenvolvimento de aplicações para diversas plataformas (em especial a web), facilita o processo de avaliação, vez que para esse tipo de conteúdo podemos usar o próprio navegador para executar os códigos, sem necessidade de configurações de ambiente.
 
-Caso o(a) candidato(a) não tenha familiaridade com Javscript, indicamos uma ótima referência para estudo, a documentação do [Mozilla](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference) sobre a linguagem.
+Caso o(a) candidato(a) não tenha familiaridade com Javascript, indicamos uma ótima referência para estudo: a documentação do [Mozilla](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference) sobre a linguagem.
 
 ## Orientações gerais
 
-O(a) candidato(a) deverá realizar upload de arquivo ZIP com o conteúdo desse repositório, que pode ser obtido clicando no menu do botão Code e escolhendo a opção "Download ZIP".
+O(a) candidato(a) deverá realizar upload do arquivo ZIP com o conteúdo desse repositório. Ele pode ser obtido clicando no menu do botão "Code"(na parte superior, mais à direita desta tela), escolhendo a opção "Download ZIP".
 
-Os arquivos contidos no ZIP baixado devem ser descompactados em uma mesma pasta.
+Os arquivos contidos no ZIP baixado devem ser descompactados em uma mesma pasta na máquina local.
 
-O(a) candidato(a) então deverá alterar o conteúdo do arquivo **service.js**, adicionando código nas funções contidas nesse arquivo, conforme as instruções que serão descritas adiante.
+Para realizar o desafio, o(a) candidato(a) deverá alterar o conteúdo do arquivo **service.js**, adicionando código nas funções contidas nesse arquivo, conforme as instruções que serão descritas adiante.
 
-Para testar o código implementado, o(a) candidato(o) deverá abrir o arquivo index.html em um navegador, o que geralmente é possível apenas com a execução de um duplo clique sobre ele.
+Para testar o código implementado, o(a) candidato(o) poderá abrir o arquivo index.html no navegador, o que geralmente é possível apenas com a execução de um duplo clique sobre ele.
 
-Imagem do arquivo index.html aberto em um browser. Será esse o "frontend" do programa.
+Imagem do arquivo index.html aberto no navegador. Por meio dessa interface, o(a) candidato(a) poderá testar o código implementado.
 
 ![Alt text](/assets/front.png?raw=true "Frontend")
 
-Após terminar todas as implementações no arquivo service.js, todo o conteúdo da pasta deverá ser compactado em um novo arquivo ZIP, cujo o nome deverá conter o CPF do(a) candidato(a) (Exemplo: '07817548790.zip'). Por fim, esse arquivo deverá e ser enviado para a organização que promove o processo seletivo de acordo com as orientações indicadas por ela.
+### Entrega
+
+Se esse desafio estiver sendo realizado no contexto de um processo seletivo, a entrega do desafio deverá ser realizada em conformidade com as orientações da organização que promove o processo.
+
+Sugerimos às organizações que estiverem usando esse desafio como referência, que solicite o(a) candidato(a), após terminar a codificação das funções contidas no arquivo **service.js**, crie um novo arquivo ZIP, cujo o nome corresponda ao CPF do(a) candidato(a) (Exemplo: 07817548790.zip), enviando para um email ou realizando o upload em um site.
+
+Isso pode facilitar a implemetação de uma correção preliminar automatizada.
+
+Se vc estiver realizando esse desafio de forma avulsa, sem estar participando de um processo seletivo, pode enviar o arquivo ZIP com a solução para o email: "contato@marcelo.dev.br". Assim que possível, te darei um feedback.
 
 ## Implementação
 
