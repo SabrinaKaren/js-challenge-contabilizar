@@ -38,11 +38,9 @@ Obs.: Como não estamos usando um armazenamento de dados persistente (banco de d
 
 Se esse desafio estiver sendo realizado no contexto de um processo seletivo, a entrega do desafio deverá ser realizada em conformidade com as orientações da organização que promove o processo.
 
-Sugerimos às organizações que estiverem usando esse desafio como referência, que solicite o(a) candidato(a), após terminar a codificação das funções contidas no arquivo **service.js**, crie um novo arquivo ZIP, cujo o nome corresponda ao CPF do(a) candidato(a) (Exemplo: 07817548790.zip), enviando para um email ou realizando o upload em um site.
+Por padrão, o(a) candidato(a), após terminar a codificação das funções contidas no arquivo **service.js**, deverá criar um novo arquivo ZIP com todos os arquivos contidos na pasta original e envie para a organização avaliadora.
 
-Isso pode facilitar a implemetação de uma correção preliminar automatizada.
-
-Se vc estiver realizando esse desafio de forma avulsa, sem estar participando de um processo seletivo, pode enviar o arquivo ZIP com a solução para o email: contato@marcelo.dev.br. Assim que possível, logo que possível daremos um retorno.
+Se vc estiver realizando esse desafio de forma avulsa, sem estar participando de um processo seletivo, pode enviar o arquivo ZIP com a solução para o email: contato@marcelo.dev.br. Assim que possível, daremos um retorno.
 
 ## Case
 
