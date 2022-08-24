@@ -90,7 +90,7 @@ Obs.: Para validações e outros cálculos, o(a) candidato(a) poderá criar fun�
 
 1. Função **validarEntradaDeDados**
 - Tipo do parâmetro de entrada: lancamento
-- Tipos de retorno: string (mensagens de validação) ou null (se todas as validações estiverem)
+- Tipos de retorno: string (mensagens de validação) ou null (se todos os valores estiverem em conformidade com as validações)
 Esta função recebe um objeto (lancamento) contendo os valores digitados pelo usuário. Esses valores deverão ser analisados conforme as regras abaixo. Caso uma ou mais regras não sejam atendidas, uma mensagem de validação informando quais regras não foram atendidas deverá ser retornada na função. Se todas as regras forem atendidas a função deverá retornar null.
 
    - CPF deve conter apenas caracteres núméricos.
