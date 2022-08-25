@@ -150,9 +150,9 @@ CPF       |Valor     |
 
 CPF       |Valor     |
 ------------|------------|
-05987701007 | R$ 1.434,69
-41421980096 |-R$ 2.089,90
 74914372061 | R$ 246,22
+41421980096 |-R$ 2.089,90
+05987701007 | R$ 1.434,69
 93975495022 | R$ 10.489,99
 
 ##### Painel Cinza (O maior e o menor lançamento do último CPF - Do menor para o maior):
