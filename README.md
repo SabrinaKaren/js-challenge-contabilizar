@@ -116,7 +116,7 @@ Essa função recebe um array com todos os lançamentos digitados para todos os 
 4. Função **recuperarMaioresSaldos**
 - Tipo do parâmetro de entrada: lancamentos (todos os lançamentos registrados)
 - Tipo de retorno: lancamentos (somente três registros, conforme solicitado na regra)
-Essa função recebe um array com todos os lançamentos digitados para todos os CPF's. Os valores desse array deverão ser analisados e um array de saída deverá ser criado contendo, no máximo, três registros correspondentes aos CPFs com maiores saldos, ordenados do maior para o menor valor. Para cada lançamento deverá ser exibido o saldo do respectivo CPF. Havendo menos de três diferentes CPFs nos registros, deve ser retornado no array quantos forem possível. No caso de não ser identificado nenhum registro correspondente, o retorno deve ser um array vazio.
+Essa função recebe um array com todos os lançamentos digitados para todos os CPF's. Os valores desse array deverão ser analisados e um array de saída deverá ser criado contendo, no máximo, três registros correspondentes aos CPFs com maiores saldos, ordenados do maior para o menor valor. Para cada lançamento deverá ser exibido o saldo do respectivo CPF. Havendo menos de três diferentes CPFs nos registros, deve ser retornado no array quantos forem possíveis. No caso de não ser identificado nenhum registro correspondente, o retorno deve ser um array vazio.
 
 5. Função: **recuperarMaioresMedias**
 - Tipo do parâmetro de entrada: lancamentos (todos os lançamentos registrados)
