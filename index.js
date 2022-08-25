@@ -1,5 +1,3 @@
-/*$('#valor').maskMoney()*/
-
 const lancamentos = []
 
 const salvarLancamento = () => {
