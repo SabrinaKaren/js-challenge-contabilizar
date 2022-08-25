@@ -97,7 +97,7 @@ Esta função recebe um objeto (lancamento) contendo os valores digitados pelo u
    - O dígito verificador do CPF deve ser válido.
    - Valor deve ser numérico.
    - Valor não pode ser superior a R$ 15.000,00.
-   - Valor não pode ser inferior a R$ 2.000,00.
+   - Valor não pode ser inferior a -R$ 2.000,00.
    
 Obs.: Para realizar o cálculo do dígito verificador do CPF e saber se o valor informado é válido, poderá o(a) candidato(a) utilizar uma função obtida por meio de pesquisa na Internet, desde que se certifique que essa função esteja funcionando corretamente. A habilidade para realizar a pesquisa e adição de código obtido externamente faz parte dos critérios de avaliação, pois representa uma rotina comum no dia-a-dia dos desenvolvedores.
 
