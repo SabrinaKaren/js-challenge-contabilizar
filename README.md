@@ -60,7 +60,7 @@ O arquivo service.js contém as 5 (cinco) funções destacadas na imagem abaixo.
 
 O código do corpo de cada uma dessas funções deve ser implementado em conformidade com as regras que serão descritas adiante.
 
-Para um melhor entendimento das regras, além da descrição, o(a) candidato(a) poderá usar da interpretação dos dados de entrada e saída presentes na seção **Exemplo de Teste do programa**.
+Para um melhor entendimento das regras, além da descrição, o(a) candidato(a) poderá usar da interpretação dos dados de entrada e saída presentes na seção [**Exemplo de Teste do programa**](#exemplo-de-teste-do-programa).
 
 O nome de cada função também é sugestivo. Embora o candidato só possa alterar o arquivo **service.js** é facultado analisar o código dos demais arquivos contidos no repositório, a fim de entender o propósito do código a ser implementado.
 
