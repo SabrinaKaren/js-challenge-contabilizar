@@ -1,5 +1,6 @@
 const validarEntradaDeDados = (lancamento) => {
-    return null
+   console.log(lancamento) 
+   return null
 }
 
 const recuperarSaldosPorConta = (lancamentos) => {

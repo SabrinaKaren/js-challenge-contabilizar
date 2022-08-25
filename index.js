@@ -1,4 +1,4 @@
-$('#valor').maskMoney();
+/*$('#valor').maskMoney()*/
 
 const lancamentos = []
 
@@ -17,7 +17,7 @@ const salvarLancamento = () => {
         try {
             const lancamento = { 
                 cpf: inputCpf.value == '' ? null : inputCpf.value, 
-                valor: inputValor.value == '' ? null :  inputValor.value
+                valor: Number(inputValor.value) == '' ? null :  Number(inputValor.value)
             }
             const mensagemValidacao = validarEntradaDeDados(lancamento)
             if (mensagemValidacao) {
