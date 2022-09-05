@@ -1,6 +1,7 @@
 # Contabilizar
 ##### Teste técnico de programação
----
+
+![Elogroup](/assets/elogroup.svg?raw=true "Frontend")
 
 ## Introdução
 
@@ -32,15 +33,13 @@ Imagem do arquivo index.html aberto no navegador. Por meio dessa interface, o(a)
 
 Obs.: Como não estamos usando um armazenamento de dados persistente (banco de dados, storage...), lembre-se que caso a página seja recarregada, os dados precisarão ser adicionados novamente.
 
-![Alt text](/assets/front.png?raw=true "Frontend")
+![Frontend](/assets/front.png?raw=true "Frontend")
 
 ### Entrega
 
 Se esse desafio estiver sendo realizado no contexto de um processo seletivo, a entrega do desafio deverá ser realizada em conformidade com as orientações da organização que promove o processo.
 
-Por padrão, o(a) candidato(a), após terminar a codificação das funções contidas no arquivo **service.js**, deverá criar um novo arquivo ZIP com todos os arquivos contidos na pasta original e enviar para a organização avaliadora.
-
-Se você estiver realizando esse desafio de forma avulsa, sem estar participando de um processo seletivo, pode enviar o arquivo ZIP com a solução para o email: contato@marcelo.dev.br. Assim que possível, daremos um retorno.
+Por padrão, o(a) candidato(a), após terminar a codificação das funções contidas no arquivo **service.js**, deverá criar um novo arquivo ZIP com todos os arquivos contidos na pasta original (incluindo o arquivo service.js com o código implementado) e enviar para a organização avaliadora por meio de um link por ela fornecida.
 
 ## Case
 
@@ -56,7 +55,7 @@ Por se tratar de um cenário hipotético, essas funções podem parecer não faz
 
 O arquivo service.js contém as 5 (cinco) funções destacadas na imagem abaixo.
 
-![Alt text](/assets/back.png?raw=true "Frontend")
+![Backend](/assets/back.png?raw=true "Backend")
 
 O código do corpo de cada uma dessas funções deve ser implementado em conformidade com as regras que serão descritas adiante.
 
@@ -66,7 +65,7 @@ O nome de cada função também é sugestivo. Embora o candidato só possa alter
 
 A capacidade de interpretar os requisitos, mesmo em casos que a especificação não seja detalhada, também faz parte do rol de habilidades de um bom desenvolvedor e é comum que esses aspectos também sejam considerados pelos avaliadores no momento de decidir pela contratação, ou não, do(a) candidato(a).
 
-Ainda assim, caso o(a) candidato(a) tenha dúvidas, poderá usar os meios fornecidos pela organização que estiver promovendo o processo seletivo, ou no caso de estar realizando o desafio de forma avulsa, pode enviar uma mensagem com as dúvidas para: contato@marcelo.dev.br. Logo que possível, daremos um retorno.
+Ainda assim, caso o(a) candidato(a) tenha dúvidas, poderá usar os meios fornecidos para contatar a organização que estiver promovendo o processo seletivo.
 
 #### Modelos de dados
 
