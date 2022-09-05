@@ -1,6 +1,7 @@
 # Contabilizar
 ##### Teste técnico de programação
 
+Este repositório tem o apoio da [Elogroup](https://www.elogroup.com.br)
 ![Elogroup](/assets/elogroup.svg?raw=true "Frontend")
 
 ## Introdução
