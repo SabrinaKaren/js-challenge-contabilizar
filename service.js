@@ -1,5 +1,4 @@
 const validarEntradaDeDados = (lancamento) => {
-   console.log(lancamento) 
    return null
 }
 
