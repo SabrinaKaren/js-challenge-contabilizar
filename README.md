@@ -31,9 +31,11 @@ Para realizar o desafio, o(a) candidato(a) deverá alterar o conteúdo do arquiv
 
 Para testar o código implementado, o(a) candidato(o) poderá abrir o arquivo index.html no navegador, o que geralmente é possível apenas com a execução de um duplo clique sobre ele.
 
-Imagem do arquivo index.html aberto no navegador. Por meio dessa interface, o(a) candidato(a) poderá testar o código implementado.
+Por meio dessa interface, o(a) candidato(a) poderá testar o código implementado.
 
 Obs.: Como não estamos usando um armazenamento de dados persistente (banco de dados, storage...), lembre-se que caso a página seja recarregada, os dados precisarão ser adicionados novamente.
+
+Imagem do arquivo index.html aberto no navegador. 
 
 ![Frontend](/assets/front.png?raw=true "Frontend")
 
