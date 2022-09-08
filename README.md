@@ -97,7 +97,7 @@ Obs.: Para validações e outros cálculos, o(a) candidato(a) poderá criar fun�
 Esta função recebe um objeto (lancamento) contendo os valores digitados pelo usuário. Esses valores deverão ser analisados conforme as regras abaixo. Caso uma ou mais regras não sejam atendidas, uma mensagem de validação informando quais regras não foram atendidas deverá ser retornada na função. Se todas as regras forem atendidas a função deverá retornar null.
 
    - CPF deve conter apenas caracteres numéricos.
-   - O dígito verificador do CPF deve ser válido.
+   - Os dígitos verificadores do CPF devem ser válido.
    - Valor deve ser numérico.
    - Valor não pode ser superior a R$ 15.000,00.
    - Valor não pode ser inferior a -R$ 2.000,00.
@@ -134,18 +134,18 @@ Obs.: A sequência deve ser obedecida.
 
 CPF       |Valor     |
 ------------|------------|
-74914372061 | R$ 1.234,78
-74914372061 |-R$ 123,56
-74914372061 |-R$ 865,00
-41421980096 |-R$ 987,00
-41421980096 | R$ 123,00
-41421980096 |-R$ 1.225,90
-05987701007 | R$ 1.267,39
-05987701007 | R$ 143,90
-05987701007 | R$ 23,40
-93975495022 | R$ 1.943,00
-93975495022 | R$ 8.000,21
-93975495022 | R$ 546,78
+74914372061 | 1.234,78
+74914372061 | -123,56
+74914372061 | -865,00
+41421980096 | -R$ 987,00
+41421980096 | 123,00
+41421980096 | -1.225,90
+05987701007 | 1.267,39
+05987701007 | 143,90
+05987701007 | 23,40
+93975495022 | 1.943,00
+93975495022 | 8.000,21
+93975495022 | 546,78
 
 #### Saídas esperadas:
 
@@ -153,30 +153,30 @@ CPF       |Valor     |
 
 CPF       |Valor     |
 ------------|------------|
-74914372061 | R$ 246,22
-41421980096 |-R$ 2.089,90
-05987701007 | R$ 1.434,69
-93975495022 | R$ 10.489,99
+74914372061 | 246,22
+41421980096 | -2.089,90
+05987701007 | 1.434,69
+93975495022 | 10.489,99
 
 ##### Painel Cinza (O maior e o menor lançamento do último CPF - Do menor para o maior):
 
 CPF       |Valor     |
 ------------|------------|
-93975495022 | R$ 546,78
-93975495022 | R$ 8.000,21
+93975495022 | 546,78
+93975495022 | 8.000,21
 
 ##### Painel Azul Escuro (Os três CPFs com maiores "médias" - Da maior para a menor):
 
 CPF       |Valor     |
 ------------|------------|
-93975495022 | R$ 3.496,66
-05987701007 | R$ 478,23
-74914372061 | R$ 82,07
+93975495022 | 3.496,66
+05987701007 | 478,23
+74914372061 | 82,07
 
 ##### Painel Amarelo (Três maiores saldos por CPF - do maior para o menor):
 
 CPF       |Valor     |
 ------------|------------|
-93975495022 | R$ 10.489,99
-05987701007 | R$ 1.434,69
-74914372061 | R$ 246,22
+93975495022 | 10.489,99
+05987701007 | 1.434,69
+74914372061 | 246,22
