@@ -45,7 +45,7 @@ const atualizarPaineis = (cpf) => {
             th.setAttribute('scope', 'row') 
             th.innerHTML = lancamento.cpf
             const td = document.createElement('td')
-            td.innerHTML = lancamento.valor
+            td.innerHTML = (Math.round(lancamento.valor * 100) / 100).toFixed(2).replace(',','').replace('.',',')
             const tr = document.createElement('tr')
             tr.appendChild(th)
             tr.appendChild(td)
@@ -61,3 +61,21 @@ const atualizarPaineis = (cpf) => {
     atualizarPainel(document.getElementById('maioresMedias'), recuperarMaioresMedias(lancamentos))
 
 }
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == 'KeyT' && (event.ctrlKey || event.metaKey)) {
+        lancamentos.push({cpf:'74914372061',valor:1234.78})
+        lancamentos.push({cpf:'74914372061',valor:-123.56})
+        lancamentos.push({cpf:'74914372061',valor:-865.00})
+        lancamentos.push({cpf:'41421980096',valor:-987})
+        lancamentos.push({cpf:'41421980096',valor:123})
+        lancamentos.push({cpf:'41421980096',valor:-1225.9})
+        lancamentos.push({cpf:'05987701007',valor:1267.39})
+        lancamentos.push({cpf:'05987701007',valor:143.9})
+        lancamentos.push({cpf:'05987701007',valor:23.4})
+        lancamentos.push({cpf:'93975495022',valor:1943})
+        lancamentos.push({cpf:'93975495022',valor:8000.21})
+        lancamentos.push({cpf:'93975495022',valor:546.78})
+        atualizarPaineis('93975495022');
+    }
+});
