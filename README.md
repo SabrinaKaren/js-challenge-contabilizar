@@ -99,8 +99,8 @@ Esta função recebe um objeto (lancamento) contendo os valores digitados pelo u
    - CPF deve conter apenas caracteres numéricos.
    - Os dígitos verificadores do CPF devem ser válido.
    - Valor deve ser numérico.
-   - Valor não pode ser superior a R$ 15.000,00.
-   - Valor não pode ser inferior a -R$ 2.000,00.
+   - Valor não pode ser superior a 15000,00.
+   - Valor não pode ser inferior a -2000,00.
    
 Obs.: Para realizar o cálculo do dígito verificador do CPF e saber se o valor informado é válido, poderá o(a) candidato(a) utilizar uma função obtida por meio de pesquisa na Internet, desde que se certifique que essa função esteja funcionando corretamente. A habilidade para realizar a pesquisa e adição de código obtido externamente faz parte dos critérios de avaliação, pois representa uma rotina comum no dia-a-dia dos desenvolvedores.
 
@@ -137,7 +137,7 @@ CPF       |Valor     |
 74914372061 | 1.234,78
 74914372061 | -123,56
 74914372061 | -865,00
-41421980096 | -R$ 987,00
+41421980096 | -987,00
 41421980096 | 123,00
 41421980096 | -1.225,90
 05987701007 | 1.267,39
